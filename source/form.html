@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="source/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Седона</title>
 </head>
 
@@ -14,58 +14,68 @@
         <img class="header__link__logo" src="./img/svg/logo.svg" width="185" height="96" alt="Логотип." />
       </a>
       <nav class="main__menu">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main__menu__burger-hidden">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main__menu__list">
-            <li class="main__menu__item"><a class="main__menu__link">главная</a></li>
-            <li class="main__menu__item"><a class="main__menu__link">фото и отзывы</a></li>
-            <li class="main__menu__item"><a class="main__menu__link">форма отказа</a></li>
-            <li class="main__menu__item"><a class="main__menu__link">html academy</a></li>
+            <li class="main__menu__item"><a class="main__menu__link" href="./index.html">главная</a></li>
+            <li class="main__menu__item"><a class="main__menu__link" href="./catalog.html">фото и отзывы</a></li>
+            <li class="main__menu__item"><a class="main__menu__link" href="./form.html">форма отказа</a></li>
+            <li class="main__menu__item"><a class="main__menu__link" href="#">html academy</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
+
   <main class="form">
     <section class="form__wrapper">
+      <div class="catalog__background">
+        <img class="catalog__background__img" src="./img/jpg/back-desktop.jpg" width="1200" height="389"
+          alt="Седона-небольшой городок." />
+          <img class="catalog__greetings__img--sedona" src="./img/svg/sedona.svg" width="282" height="49" alt="SEDONA." />
+      </div>
       <div class="review">
-        <p class="review__title">оставьте свой отзыв</p>
-        <p class="review__text">помогите нашим отелям стать лучше! оставьте отзыв о них, также о посещенных вами
-          достопримечательностях</p>
+        <div class="triangle">
+          <p class="review__title">оставьте свой отзыв</p>
+          <p class="review__text">помогите нашим отелям стать лучше! оставьте отзыв о них, также о посещенных вами
+            достопримечательностях</p>
+        </div>
       </div>
-      <div class="form__greetings">
-        <fieldset class="form__fieldset">
-          <legend class="form__fieldset__greetings">Представьтесь</legend>
-          <p class="form__fieldset__fullname">
-            <label class="form__greetings__label">имя*:</label>
-            <input class="form__greetings__input" type="text" name="first-name" placeholder="Имя" value="Петр" />
-          </p>
-          <p class="form__fieldset__fullname">
-            <label class="form__greetings__label">фамилия*:</label>
-            <input class="form__greetings__input" type="text" name="first-name" placeholder="" value="" />
-          </p>
-          <p class="form__fieldset__fullname">
-            <label class="form__greetings__label">отчество:</label>
-            <input class="form__greetings__input" type="text" name="first-name" placeholder="Отчество"
-              value="Викторович" />
-          </p>
-        </fieldset>
-      </div>
-      <div class="form__contact__info">
-        <fieldset class="form__fieldset__contact__info">
-          <legend class="form__fieldset__contact__info">контактная информация</legend>
-          <p class="form__fieldset__contact__tel">
-            <label class="form__contact__tel">контактный телефон*:</label>
-            <input class="form__contact__tel__input" type="text" name="contact-tel" placeholder="Введите телефон"
-              value="" />
-            <span class="form__img__telefon"></span>
-          </p>
-          <p class="form__fieldset__email">
-            <label class="form__email">электронная почта*:</label>
-            <input class="form__input__email" type="text" name="first-name" placeholder="" value="" />
-            <span class="form__img__email"></span>
-          </p>
-        </fieldset>
+      <div class="greetings__contact__info">
+        <div class="form__greetings">
+          <fieldset class="form__fieldset">
+            <legend class="form__fieldset__greetings">Представьтесь</legend>
+            <p class="form__fieldset__fullname">
+              <label class="form__greetings__label">имя*:</label>
+              <input class="form__greetings__input" type="text" name="first-name" placeholder="Имя" value="Петр" />
+            </p>
+            <p class="form__fieldset__fullname">
+              <label class="form__greetings__label">фамилия*:</label>
+              <input class="form__greetings__input" type="text" name="first-name" placeholder="Пустота" value="" />
+            </p>
+            <p class="form__fieldset__fullname">
+              <label class="form__greetings__label">отчество:</label>
+              <input class="form__greetings__input" type="text" name="first-name" placeholder="Отчество"
+                value="Викторович" />
+            </p>
+          </fieldset>
+        </div>
+        <div class="form__contact__info">
+          <fieldset class="form__fieldset__contact">
+            <legend class="form__fieldset__contact__info">контактная информация</legend>
+            <p class="form__fieldset__tel__email">
+              <label class="form__contact__tel__email">контактный телефон*:</label>
+              <input class="form__contact__tel__email__input" type="text" name="contact-tel" placeholder="Введите телефон"
+                value="" />
+              <span class="form__img__telefon"></span>
+            </p>
+            <p class="form__fieldset__tel__email">
+              <label class="form__contact__tel__email">электронная почта*:</label>
+              <input class="form__contact__tel__email__input" type="text" name="first-name" placeholder="Введите e-mail" value="" />
+              <span class="form__img__email"></span>
+            </p>
+          </fieldset>
+        </div>
       </div>
       <div class="impression">
         <form class="form__impression" action="https://echo.htmlacademy.ru" method="get">
@@ -98,7 +108,7 @@
       <div class="sights">
         <form class="form__sights" action="https://echo.htmlacademy.ru" method="get">
           <p class="sights__title">посещенные достопримичательности:</p>
-          <ul class="checkbox-filter-list">
+          <ul class="checkbox-filter-item">
             <li class="checkbox-filter-list">
               <label class="control-sights">
                 <input class="color-input" type="checkbox" name="devil's bridge" checked />
@@ -137,9 +147,11 @@
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
       </div>
+      <div class="comment__button">
         <button class="button comment_button" type="submit">Отправить отзыв
         </button>
         <p class="form__notice">* — обязательные поля</p>
+      </div>
       <div class="modal__window--error">
         <p class="modal__window--error__title">что-то пошло не так!</p>
         <p class="modal__window--error__text">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
