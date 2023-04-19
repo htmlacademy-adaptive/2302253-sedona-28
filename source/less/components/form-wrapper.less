@@ -1,0 +1,71 @@
+.form__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.review {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 70px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 57px;
+    top: -85px;
+    left: 0px;
+    background-image: url("../../../img/svg/triangle.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+     &::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 57px;
+    top: -85px;
+    right: 0px;
+    background-image: url("../../../img/svg/triangle.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+    transform: scale(-1,1)
+  }
+}
+
+.triangle {
+  width: 484px;
+}
+
+.review__title {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 26px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+mix-blend-mode: normal;
+}
+
+.review__text {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+text-align: center;
+text-transform: uppercase;
+color: #333333;
+mix-blend-mode: normal;
+}
