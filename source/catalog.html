@@ -3,22 +3,23 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
   <title>Седона</title>
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <a class="header__link" href="#" target="_blank">
       <img class="header__link__logo" src="./img/svg/logo.svg" width="185" height="96" alt="Логотип города Sedona." />
     </a>
     <nav class="main__menu">
       <div class="main__menu__burger-hidden">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <div class="main__nav__menu">
-      <ul class="main__menu__list">
+        <ul class="main__menu__list">
           <li class="main__menu__item"><a class="main__menu__link" href="./index.html">главная</a></li>
           <li class="main__menu__item"><a class="main__menu__link" href="./catalog.html">фото и отзывы</a></li>
           <li class="main__menu__item"><a class="main__menu__link" href="./form.html">форма отказа</a></li>
@@ -29,67 +30,67 @@
   </header>
 
   <main class="catalog">
-    <div class="catalog__background">
-      <img class="catalog__background__img" src="./img/jpg/back-desktop.jpg" width="1200" height="389"
-        alt="Седона-небольшой городок." />
-        <img class="catalog__greetings__img--sedona" src="./img/svg/sedona.svg" width="282" height="49" alt="Промо текст SEDONA." />
+    <div class="triangle">
+      <img class="background__img" src="./img/jpg/back-desktop.jpg" alt="Седона-небольшой городок." />
+      <div class="catalog__greetings">
+        <img class="catalog__greetings__img--sedona" src="./img/svg/sedona.svg" width="282" height="49"
+          alt="Промо текст SEDONA." />
+      </div>
     </div>
     <div class="catalog__foto__video">
-      <div class="triangle">
-        <h1 class="catalog__foto__video__title">фото и видео</h1>
-        <p class="catalog__foto__video__text">не можете решиться на путешествие из-за курса? фотографии помогут вам
-          забыть о политике и экономике.</p>
-      </div>
+      <h1 class="catalog__foto__video__title">фото и видео</h1>
+      <p class="catalog__foto__video__text">не можете решиться на путешествие из-за курса? фотографии помогут вам
+        забыть о политике и экономике.</p>
     </div>
     <div class="catalog__foto__tape">
       <ul class="catalog__foto__tape__item">
         <li class="catalog__foto__tape__list">
-          <img class="catalog__foto" src="./img/jpg/photo-1-mobile.jpg" width="1200" height="400"
-            alt="Неродные просторы." />
-            <div class="catalog__foto__tape__container">
-              <div class="catalog__foto__tape__text">
-                <p class="catalog__foto__title">неродные просторы</p>
-                <p class="catalog__foto__text">Автор фото: Борис</p>
-              </div>
-              <span class="like__meter"><img class="like" src="./img/svg/like-icon.svg" width="23" height="21" alt="Лайк." />
+          <img class="catalog__foto__main" src="./img/jpg/photo-1-mobile.jpg" alt="Неродные просторы." />
+          <div class="catalog__foto__tape__container">
+            <div class="catalog__foto__tape__text">
+              <p class="catalog__foto__title">неродные просторы</p>
+              <p class="catalog__foto__text">Автор фото: Борис</p>
+            </div>
+            <span class="like__meter"><img class="like" src="./img/svg/like-icon.svg" width="23" height="21"
+                alt="Лайк." />
               1350</span>
-            </div>
+          </div>
         </li>
         <li class="catalog__foto__tape__list">
-          <img class="catalog__foto" src="./img/jpg/photo-2-mobile.jpg" width="400" height="267"
-            alt="Местная растительность." />
-            <div class="catalog__foto__tape__container">
-              <div class="catalog__foto__tape__text">
-                <p class="catalog__foto__title">местная растительность</p>
-                <p class="catalog__foto__text">Автор фото: Сергей</p>
-              </div>
-          <span class="like__meter"><img class="like" src="./img/svg/like-icon.svg" width="23" height="21" alt="Лайк." />
-          143</span>
+          <img class="catalog__foto__other" src="./img/jpg/photo-2-mobile.jpg" alt="Местная растительность." />
+          <div class="catalog__foto__tape__container">
+            <div class="catalog__foto__tape__text">
+              <p class="catalog__foto__title">местная растительность</p>
+              <p class="catalog__foto__text">Автор фото: Сергей</p>
             </div>
+            <span class="like__meter"><img class="like" src="./img/svg/like-icon.svg" width="23" height="21"
+                alt="Лайк." />
+              143</span>
+          </div>
         </li>
         <li class="catalog__foto__tape__list">
-          <img class="catalog__foto" src="./img/jpg/photo-3-mobile.jpg" width="400" height="267"
-            alt="Дорога на север." />
-            <div class="catalog__foto__tape__container">
-              <div class="catalog__foto__tape__text">
-                <p class="catalog__foto__title">дорога на север</p>
-                <p class="catalog__foto__text">Автор фото: Петр</p>
-              </div>
-          <span class="like__meter"><img class="like" src="./img/svg/like-icon.svg" width="23" height="21" alt="Лайк." />
-          96</span>
+          <img class="catalog__foto__other" src="./img/jpg/photo-3-mobile.jpg" alt="Дорога на север." />
+          <div class="catalog__foto__tape__container">
+            <div class="catalog__foto__tape__text">
+              <p class="catalog__foto__title">дорога на север</p>
+              <p class="catalog__foto__text">Автор фото: Петр</p>
             </div>
+            <span class="like__meter"><img class="like" src="./img/svg/like-icon.svg" width="23" height="21"
+                alt="Лайк." />
+              96</span>
+          </div>
         </li>
         <li class="catalog__foto__tape__list">
-          <img class="catalog__foto" src="./img/jpg/photo-4-desktop.jpg" width="400" height="267"
-            alt="Мост дьявола." />
-            <div class="catalog__foto__tape__container">
-              <div class="catalog__foto__tape__text">
-                <p class="catalog__foto__title">мост дьявола</p>
-                <p class="catalog__foto__text">Автор фото: Антон</p>
-              </div>
-          <span class="like__meter"><img class="like" src="./img/svg/like-icon.svg" width="23" height="21" alt="Лайк." />
-          254</span>
+          <img class="catalog__foto__other" src="./img/jpg/photo-4-desktop.jpg" alt="Мост дьявола." />
+          <div class="catalog__foto__tape__container">
+            <div class="catalog__foto__tape__text">
+              <p class="catalog__foto__title">мост дьявола</p>
+              <p class="catalog__foto__text">Автор фото: Антон</p>
             </div>
+            <span class="like__meter"><img class="like" src="./img/svg/like-icon.svg" width="23" height="21"
+                alt="Лайк." />
+              254</span>
+          </div>
         </li>
       </ul>
     </div>
@@ -99,8 +100,7 @@
         <p class="catalog__video__text">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
           очередной раз!</p>
       </div>
-      <img class="catalog__video" src="./img/jpg/video-desktop.jpg" width="800" height="500"
-        alt="Видео о седоне." />
+      <img class="catalog__video" src="./img/jpg/video-desktop.jpg" alt="Видео о седоне." />
       <button class="video__play" type="button"><span class="visually-hidden">Play</span></button>
     </div>
   </main>

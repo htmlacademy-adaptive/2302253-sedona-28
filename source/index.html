@@ -3,22 +3,23 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
   <title>Седона</title>
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <a class="header__link" href="#" target="_blank">
       <img class="header__link__logo" src="./img/svg/logo.svg" width="185" height="96" alt="Логотип города Sedona." />
     </a>
     <nav class="main__menu">
       <div class="main__menu__burger-hidden">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <div class="main__nav__menu">
-      <ul class="main__menu__list">
+        <ul class="main__menu__list">
           <li class="main__menu__item"><a class="main__menu__link" href="./index.html">главная</a></li>
           <li class="main__menu__item"><a class="main__menu__link" href="./catalog.html">фото и отзывы</a></li>
           <li class="main__menu__item"><a class="main__menu__link" href="./form.html">форма отказа</a></li>
@@ -30,86 +31,91 @@
 
   <main class="main">
     <section class="main__wrapper">
-      <img class="main__background__img" src="./img/jpg/back-desktop.jpg" width="901" height="389"
-        alt="Седона-небольшой городок." />
-      <div class="main__greetings">
-        <img class="main__greetings__img" src="./img/svg/welcome.svg" width="115" height="28" alt="Welcome." />
-        <img class="main__greetings__img--center" src="./img/svg/to-the.svg" width="107" height="18"
-          alt="To the gargeous." />
-        <img class="main__greetings__img--sedona" src="./img/svg/sedona.svg" width="282" height="49" alt="Промо текст SEDONA." />
-        <img class="main__greetings__img" src="./img/svg/because.svg" width="173" height="46"
-          alt="Because the grand canyon sucks." />
-      </div>
-      <div class="page__main__greetings">
-        <div class="triangle">
-          <h2 class="main__slogan__greetings">седона - небольшой городок в аризоне, заслуживающий большего!</h2>
-          <p class="main__text__greetings">рассмотрим 5 причин, по которым седона круче. чем гранд каньон!</p>
+      <div class="triangle">
+        <img class="background__img" src="./img/jpg/back-desktop.jpg" width="901" height="389"
+          alt="Седона-небольшой городок." />
+        <div class="main__greetings">
+          <img class="main__greetings__img" src="./img/svg/welcome.svg" width="115" height="28" alt="Welcome." />
+          <img class="main__greetings__img--center" src="./img/svg/to-the.svg" width="107" height="18"
+            alt="To the gargeous." />
+          <img class="main__greetings__img--sedona" src="./img/svg/sedona.svg" width="282" height="49"
+            alt="Промо текст SEDONA." />
+          <img class="main__greetings__img" src="./img/svg/because.svg" width="173" height="46"
+            alt="Because the grand canyon sucks." />
         </div>
       </div>
-        <div class="main__advantages">
-          <ul class="main__advantages__list">
-            <li class="main__advantages__item">
-              <p class="main__advantages__title">настоящий городок</p>
-              <p class="main__advantages__text">-№1-</p>
-              <p class="main__advantages__text">седона не атракцион для туристов, там течет своя жизнь</p>
-            </li>
-            <li class="main__advantages__item__img">
-              <img class="main__advantages__img" src="./img/jpg/photo-city.jpg" width="800" height="256"
-              alt="Виды седоны."/>
-            </li>
-          </ul>
+      <div class="page__main__greetings">
+        <h2 class="main__slogan__greetings">седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+        <p class="main__text__greetings">рассмотрим 5 причин, по которым седона круче. чем гранд каньон!</p>
       </div>
-            <div class="main__advantages__svg">
-              <ul class="main__advantages__svg__list">
-                <li class="main__advantages__svg__item">
-                  <img class="img-house" src="./img/svg/icon-house.svg" width="80" height="73" alt="Дом." />
-                  <p class="main__advantages__info__title">жилье</p>
-                  <p class="main__advantages__info__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </li>
-                  <li class="main__advantages__svg__item">
-                    <img class="img-burger" src="./img/svg/icon-burger.svg" width="80" height="73" alt="Бургер." />
-                    <p class="main__advantages__info__title">еда</p>
-                    <p class="main__advantages__info__text">всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
-                  </li>
-                  <li class="main__advantages__svg__item">
-                  <img class="img-gift" src="./img/svg/icon-gift.svg" width="80" height="73" alt="Сувенир." />
-                  <p class="main__advantages__info__title">сувениры</p>
-                  <p class="main__advantages__info__text">не только китайского но и местного производства!</p>
-                </li>
-              </ul>
+      <div class="main__advantages">
+        <ul class="main__advantages__list">
+          <li class="main__advantages__item">
+            <p class="main__advantages__title">настоящий городок</p>
+            <p class="main__advantages__text">-№1-</p>
+            <p class="main__advantages__text">седона не атракцион для туристов, там течет своя жизнь</p>
+          </li>
+          <li class="main__advantages__item__img">
+            <img class="main__advantages__img" src="./img/jpg/photo-city.jpg" alt="Виды седоны." />
+          </li>
+        </ul>
+      </div>
+      <div class="main__advantages__svg">
+        <ul class="main__advantages__svg__list">
+          <li class="main__advantages__svg__item">
+            <img class="img-house" src="./img/svg/icon-house.svg" alt="Дом." />
+            <div class="main__advantages__info__text">
+              <p class="main__advantages__info__title">жилье</p>
+              <p class="main__advantages__info__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
-            <div class="main__advantages">
-              <ul class="main__advantages__list">
-                <li class="main__advantages__item__img">
-                  <img class="main__advantages__img" src="./img/jpg/photo-bridge.jpg" width="800" height="254"
-                    alt="Мост дьявола." />
-                </li>
-              <li class="main__advantages__item">
-                <p class="main__advantages__title">там есть мост дьявола</p>
-                <p class="main__advantages__text">-№2-</p>
-                <p class="main__advantages__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
-              </li>
-              </ul>
+          </li>
+          <li class="main__advantages__svg__item">
+            <img class="img-burger" src="./img/svg/icon-burger.svg" alt="Бургер." />
+            <div class="main__advantages__info__text">
+              <p class="main__advantages__info__title">еда</p>
+              <p class="main__advantages__info__text">всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
             </div>
-            <div class="main__advantages__tape">
-              <ul class="main__advantages__tape__list">
-              <li class="main__advantages__tape__item">
-                <p class="main__advantages__info__title">небольшая площадь</p>
-                <p class="main__advantages__info__text">-№3-</p>
-                <p class="main__advantages__info__text">все интересные места находятся очень близко</p>
-              </li>
-              <li class="main__advantages__tape__item">
-                <p class="main__advantages__info__title">красивая дорога</p>
-                <p class="main__advantages__info__text">-№4-</p>
-                <p class="main__advantages__info__text">ехать в седону из лас-вегаса совсем не скучно</p>
-              </li>
-              <li class="main__advantages__tape__item">
-                <p class="main__advantages__info__title">мало туристов</p>
-                <p class="main__advantages__info__text">-№5-</p>
-                <p class="main__advantages__info__text">большинство едет в гранд каньон и толпится там</p>
-              </li>
-            </ul>
+          </li>
+          <li class="main__advantages__svg__item">
+            <img class="img-gift" src="./img/svg/icon-gift.svg" alt="Сувенир." />
+            <div class="main__advantages__info__text">
+              <p class="main__advantages__info__title">сувениры</p>
+              <p class="main__advantages__info__text">не только китайского но и местного производства!</p>
             </div>
+          </li>
+        </ul>
+      </div>
+      <div class="main__advantages">
+        <ul class="main__advantages__list">
+          <li class="main__advantages__item__img">
+            <img class="main__advantages__img" src="./img/jpg/photo-bridge.jpg" alt="Мост дьявола." />
+          </li>
+          <li class="main__advantages__item">
+            <p class="main__advantages__title">там есть мост дьявола</p>
+            <p class="main__advantages__text">-№2-</p>
+            <p class="main__advantages__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+          </li>
+        </ul>
+      </div>
+      <div class="main__advantages__tape">
+        <ul class="main__advantages__tape__list">
+          <li class="main__advantages__tape__item">
+            <p class="main__advantages__tape__title">небольшая площадь</p>
+            <p class="main__advantages__tape__text">-№3-</p>
+            <p class="main__advantages__tape__text">все интересные места находятся очень близко</p>
+          </li>
+          <li class="main__advantages__tape__item">
+            <p class="main__advantages__tape__title">красивая дорога</p>
+            <p class="main__advantages__tape__text">-№4-</p>
+            <p class="main__advantages__tape__text">ехать в седону из лас-вегаса совсем не скучно</p>
+          </li>
+          <li class="main__advantages__tape__item">
+            <p class="main__advantages__tape__title">мало туристов</p>
+            <p class="main__advantages__tape__text">-№5-</p>
+            <p class="main__advantages__tape__text">большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </div>
 
     </section>
     <section class="page__main__offers">
@@ -123,7 +129,7 @@
     <div class="navigation__map">
       <a class="navigation__map__link"
         href="https://www.google.com/maps/place/%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0,+%D0%90%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D0%B0+86336,+%D0%A1%D0%A8%D0%90/@34.8543784,-111.7951384,13z/data=!3m1!4b1!4m6!3m5!1s0x872da132f942b00d:0x5548c523fa6c8efd!8m2!3d34.8697395!4d-111.7609896!16zL20vMG55NTc">
-        <img class="map" src="./img/jpg/map-mobile.jpg" width="1200" height="350" alt="Карта навигаций." />
+        <img class="map" src="./img/jpg/map-mobile.jpg" alt="Карта навигаций." />
         <img class="map-market" src="./img/svg/map-marker.svg" width="27" height="27" alt="Маркер." />
       </a>
     </div>

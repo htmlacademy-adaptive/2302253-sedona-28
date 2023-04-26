@@ -1,6 +1,6 @@
 .form__wrapper {
   width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,35 +15,6 @@
   justify-content: center;
   width: 100%;
   padding-bottom: 70px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 600px;
-    height: 57px;
-    top: -85px;
-    left: 0px;
-    background-image: url("../../../img/svg/triangle.svg");
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-
-     &::before {
-    content: "";
-    position: absolute;
-    width: 600px;
-    height: 57px;
-    top: -85px;
-    right: 0px;
-    background-image: url("../../../img/svg/triangle.svg");
-    background-repeat: no-repeat;
-    z-index: 1;
-    transform: scale(-1,1)
-  }
-}
-
-.triangle {
-  width: 484px;
 }
 
 .review__title {
@@ -68,4 +39,30 @@ text-align: center;
 text-transform: uppercase;
 color: #333333;
 mix-blend-mode: normal;
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .form {
+    overflow: hidden;
+    width: 100%;
+  }
+.form__wrapper {
+  width: 100%;
+}
+}
+@media (max-width: @mobile-width-only) {
+  .form {
+    overflow: hidden;
+    width: 100%;
+  }
+.form__wrapper {
+  width: 100%;
+}
+  .review {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .review__title {
+    font-size: 18px;
+  }
 }

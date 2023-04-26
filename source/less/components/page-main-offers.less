@@ -61,10 +61,52 @@
 }
 
 .map {
+  width: 1200px;
+  height: 350px;
   z-index: -1;
 }
 
 .map-market {
   position: absolute;
   left: 50%;
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .page__main__offers {
+    width: 100%;
+  }
+  .main__offers {
+    width: 100%;
+  }
+  .navigation__map {
+    width: 100%;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .page__main__offers {
+    width: 100%;
+  }
+  .main__offers {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .navigation__map {
+    width: 100%;
+  }
+  .main__offers_title {
+    font-size: 21px;
+  }
+  .main__offers__text {
+    font-weight: lighter;
+  }
+  .map {
+    width: 100%;
+    object-fit: cover;
+
+  }
+  .navigation__map {
+    margin-bottom: 40px;
+  }
 }

@@ -1,6 +1,6 @@
 .main {
   width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .main__wrapper {
@@ -10,28 +10,102 @@
   justify-content: center;
 }
 
-.main__background__img {
-  position: absolute;
+.triangle {
+  position: relative;
+  width: 1200px;
+  margin-top: -30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 57px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../../../img/svg/triangle.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+     &::before {
+       content: "";
+       position: absolute;
+       width: 600px;
+       height: 57px;
+       bottom: 0;
+       right: 0;
+       background-image: url("../../../img/svg/triangle.svg");
+       background-repeat: no-repeat;
+       z-index: 1;
+       transform: scale(-1,1)
+      }
+}
+
+
+.background__img {
+  position: relative;
   z-index: -1;
-  top: 70px;
   width: 1200px;
   height: 518px;
 }
 
 .main__greetings {
+  position: absolute;
+  top: 50px;
+  left: 460px;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
   margin-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .main__greetings__img--center {
-  margin-bottom: 72px;
+  margin-bottom: 32px;
 }
 
 .main__greetings__img--sedona {
-  margin-bottom: 62px;
+  margin-bottom: 38px;
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+ .main {
+  width: 100%;
+  overflow: hidden;
+}
+.main__wrapper {
+  width: 100%;
+}
+.background__img {
+  width: 100%;
+  object-fit: none;
+}
+.main__greetings  {
+  margin-bottom: 215px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ }
+
+
+@media (max-width: @mobile-width-only) {
+  .main {
+    width: 100%;
+    overflow: hidden;
+  }
+  .main__wrapper {
+    width: 100%;
+  }
+  .background__img {
+    width: 100%;
+    object-fit: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
