@@ -1,91 +1,150 @@
 .catalog {
   width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.catalog__background {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 390px;
-}
-
-.catalog__background__img {
+.catalog__greetings {
   position: absolute;
-  z-index: -1;
-  top: 80px;
+  top: 50px;
+  left: 460px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.catalog__foto__main {
+  width: 1200px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.catalog__foto__other {
+  width: 400px;
+  height: 267px;
+  object-fit: cover;
+}
+
+.catalog__video {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
 }
 
 
 .catalog__greetings__img--sedona {
   position: absolute;
+  top: 100px;
 }
 
-.catalog__foto__video {
+.catalog__foto {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  margin-bottom: 60px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 600px;
-    height: 57px;
-    top: -85px;
-    left: 0px;
-    background-image: url("../../../img/svg/triangle.svg");
-    background-repeat: no-repeat;
-    z-index: 1;
-
-  }
-
-     &::before {
-    content: "";
-    position: absolute;
-    width: 600px;
-    height: 57px;
-    top: -85px;
-    right: 0px;
-    background-image: url("../../../img/svg/triangle.svg");
-    background-repeat: no-repeat;
-    z-index: 1;
-    transform: scale(-1,1)
-  }
-}
-
-.triangle {
   width: 484px;
+  margin: 0 auto;
 }
 
-.catalog__foto__video__title {
-  font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 26px;
-text-align: center;
-text-transform: uppercase;
-color: #000000;
-mix-blend-mode: normal;
-}
-
-.catalog__foto__video__text {
+.catalog__item__title {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+
+.catalog__item__text {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: lighter;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
   mix-blend-mode: normal;
+}
+
+.catalog__greetings {
+  width: 282px;
+  height: 49px;
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .catalog {
+    width: 100%;
+    overflow: hidden;
   }
+
+  .catalog__foto__video {
+    width: 490px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .catalog__foto__main {
+    width: 100%;
+    height: 400px;
+  }
+
+  .catalog__foto__other {
+    width: 324px;
+    height: 267px;
+  }
+
+  .catalog__video {
+    width: 100%;
+  }
+
+  .catalog__foto__tape__item {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .catalog {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .catalog__foto__video {
+    width: 100%;
+  }
+
+  .catalog__foto__video__title {
+    font-size: 21px;
+  }
+
+  .catalog__foto__video__text {
+    font-weight: lighter;
+  }
+
+  .catalog__foto__main {
+    width: 100%;
+    height: 280px;
+  }
+
+  .catalog__foto__other {
+    width: 100%;
+    height: 280px;
+  }
+
+  .catalog__video {
+    width: 100%;
+    height: 180px;
+  }
+}

@@ -7,14 +7,14 @@
 
 .sights__title {
   font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 21px;
-line-height: 26px;
-text-align: center;
-text-transform: uppercase;
-color: #000000;
-mix-blend-mode: normal;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: normal;
 }
 
 .checkbox-filter-item {
@@ -32,12 +32,40 @@ mix-blend-mode: normal;
 }
 
 .control-sights {
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 26px;
-align-items: center;
-color: #000000;
-mix-blend-mode: normal;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+
+@media (max-width: @mobile-width-only) {
+  .sights {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .form__sights {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sights__title {
+    width: 236px;
+  }
+
+  .checkbox-filter-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sights__title {
+    font-size: 18px;
+  }
 }
