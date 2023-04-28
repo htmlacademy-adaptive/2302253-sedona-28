@@ -10,7 +10,7 @@
   font-style: normal;
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
-.body {
+body {
   margin: 0 auto;
 }
 .header {
@@ -197,7 +197,7 @@
     justify-content: center;
   }
 }
-.page__main__greetings {
+.main__greetings__title {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -274,7 +274,7 @@
   .main__advantages {
     width: 100%;
   }
-  .page__main__greetings {
+  .main__greetings__title {
     width: 100%;
   }
 }
@@ -282,7 +282,7 @@
   .main__advantages {
     width: 100%;
   }
-  .page__main__greetings {
+  .main__greetings__title {
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
@@ -519,7 +519,7 @@
   width: 1200px;
   height: 518px;
 }
-.main__greetings {
+.main__greetings__item {
   position: absolute;
   top: 50px;
   left: 460px;
@@ -550,7 +550,7 @@
     width: 100%;
     object-fit: none;
   }
-  .main__greetings {
+  .main__greetings__item {
     margin-bottom: 215px;
     margin-left: auto;
     margin-right: auto;
@@ -877,16 +877,16 @@
   position: absolute;
   top: 100px;
 }
-.catalog__foto__video {
+.catalog__foto {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 484px;
-  margin-bottom: 60px;
+  margin: 0 auto;
 }
-.catalog__foto__video__title {
+.catalog__item__title {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -897,7 +897,7 @@
   color: #000000;
   mix-blend-mode: normal;
 }
-.catalog__foto__video__text {
+.catalog__item__text {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: lighter;
