@@ -1,4 +1,4 @@
-.page__main__greetings {
+.main__greetings__title {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -81,22 +81,24 @@
   mix-blend-mode: normal;
 }
 
-@media (min-width: @tablet-width) and (max-width: @desktop-width){
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .main__advantages {
     width: 100%;
   }
-  .page__main__greetings {
+
+  .main__greetings__title {
     width: 100%;
-}
+  }
 }
 
 @media (max-width: @mobile-width-only) {
   .main__advantages {
     width: 100%;
   }
-  .page__main__greetings {
+
+  .main__greetings__title {
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
-}
+  }
 }
